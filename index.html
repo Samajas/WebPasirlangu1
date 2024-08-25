@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa Pasirlangu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Pop-Up Banner -->
+    <div class="modal fade" id="popupBanner" tabindex="-1" aria-labelledby="popupBannerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupBannerLabel">Welcome to Desa Pasirlangu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="your-image-url-here.jpg" class="img-fluid" alt="Pop-up Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Burger Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-left">
+            <a class="navbar-brand" href="#">Pasirlangu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organization">Organizational Chart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#charts">Charts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Short Summary Section -->
+    <section id="summary" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Desa Pasirlangu hadir sebagai desa percontohan untuk pentingnya kehadiran digitalisasi untuk menunjang kehidupan warga desa.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="your-placeholder-image.jpg" class="img-fluid" alt="Summary Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizational Diagram with Photos -->
+    <section id="organization" class="p-5 bg-light">
+        <div class="container">
+            <h2>Organizational Chart</h2>
+            <div class="row">
+                <!-- Repeat this block for each member -->
+                <div class="col-md-4 text-center">
+                    <img src="member-photo.jpg" class="img-fluid rounded-circle" alt="Member Photo">
+                    <h5>Member Name</h5>
+                    <p>Title</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map with Added Labels -->
+    <section id="map" class="p-5">
+        <div class="container">
+            <h2>Map</h2>
+            <div id="mapContainer" style="height: 500px;">
+                <!-- Include your interactive map script here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Charts Dashboard -->
+    <section id="charts" class="p-5 bg-light">
+        <div class="container">
+            <h2>Charts</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="p-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="https://wa.me/your-whatsapp-number" target="_blank">Contact 1</a></li>
+                <!-- Add more contacts as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Website Desa Pasirlangu. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize pop-up banner on page load
+        var popupBanner = new bootstrap.Modal(document.getElementById('popupBanner'), {
+            keyboard: false
+        });
+        popupBanner.show();
+    </script>
+    <!-- Include your charting library scripts and map script here -->
+</body>
+</html>
