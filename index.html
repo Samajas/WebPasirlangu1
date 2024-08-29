@@ -1,125 +1,1266 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Desa Pasirlangu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Pop-Up Banner -->
-    <div class="modal fade" id="popupBanner" tabindex="-1" aria-labelledby="popupBannerLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="popupBannerLabel">Welcome to Desa Pasirlangu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="your-image-url-here.jpg" class="img-fluid" alt="Pop-up Image">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header with Burger Menu -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-left">
-            <a class="navbar-brand" href="#">Pasirlangu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#organization">Organizational Chart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#charts">Charts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Short Summary Section -->
-    <section id="summary" class="p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Desa Pasirlangu hadir sebagai desa percontohan untuk pentingnya kehadiran digitalisasi untuk menunjang kehidupan warga desa.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="your-placeholder-image.jpg" class="img-fluid" alt="Summary Image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Organizational Diagram with Photos -->
-    <section id="organization" class="p-5 bg-light">
-        <div class="container">
-            <h2>Organizational Chart</h2>
-            <div class="row">
-                <!-- Repeat this block for each member -->
-                <div class="col-md-4 text-center">
-                    <img src="member-photo.jpg" class="img-fluid rounded-circle" alt="Member Photo">
-                    <h5>Member Name</h5>
-                    <p>Title</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map with Added Labels -->
-    <section id="map" class="p-5">
-        <div class="container">
-            <h2>Map</h2>
-            <div id="mapContainer" style="height: 500px;">
-                <!-- Include your interactive map script here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Simple Charts Dashboard -->
-    <section id="charts" class="p-5 bg-light">
-        <div class="container">
-            <h2>Charts</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <canvas id="pieChart"></canvas>
-                </div>
-                <div class="col-md-6">
-                    <canvas id="barChart"></canvas>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="p-5">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <ul>
-                <li><a href="https://wa.me/your-whatsapp-number" target="_blank">Contact 1</a></li>
-                <!-- Add more contacts as needed -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-4">
-        <p>&copy; 2024 Website Desa Pasirlangu. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Initialize pop-up banner on page load
-        var popupBanner = new bootstrap.Modal(document.getElementById('popupBanner'), {
-            keyboard: false
-        });
-        popupBanner.show();
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   PASIRLANGU | Website Desa Pasirlangu
+  </title>
+  <!-- <base href="https://kertamulya-padalarang.desa.id/"/> -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+   <meta content="index, follow" name="robots">
+    <meta content="Kementerian Komunikasi dan Informatika RI" name="author"/>
+    <meta content="Website Resmi Desa Kertamulya" name="description"/>
+    <meta content="WebsiteEngine,Website Pemerintahan" name="keyword"/>
+    <link href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/images/logo_header.png" rel="shortcut icon" type="image/x-icon"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+    <!-- Vendor CSS Files -->
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/aos/aos.css" rel="stylesheet"/>
+    <link href="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+    <link href="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+    <!-- Template Main CSS File -->
+    <link href="main.css" rel="stylesheet"/>
+    <!-- Load jQuery -->
+    <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/jquery/jquery.min.js" type="text/javascript">
     </script>
-    <!-- Include your charting library scripts and map script here -->
-</body>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- ======= Header ======= -->
+  <section class="topbar d-flex align-items-center" id="topbar">
+   <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+     <i class="bi bi-envelope d-flex align-items-center">
+      <a href="/cdn-cgi/l/email-protection#cbbbaea6afaeb88ba0aeb9bfaaa6bea7b2aae6bbaaafaaa7aab9aaa5ace5afaeb8aae5a2af">
+       <span class="__cf_email__" data-cfemail="6f1f0a020b0a1c2f040a1d1b0e021a03160e421f0e0b0e030e1d0e0108410b0a1c0e41060b">
+        [email protected]
+       </span>
+      </a>
+     </i>
+     <i class="bi bi-phone d-flex align-items-center ms-4">
+      <span>
+       022-6623181
+      </span>
+     </i>
+    </div>
+   </div>
+  </section>
+  <!-- End Top Bar -->
+  <header class="header d-flex align-items-center" id="header">
+   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a class="logo d-flex align-items-center" href="https://kertamulya-padalarang.desa.id/">
+     <img alt="Website Desa Kertamulya" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/images/logo_header.png"/>
+     <div class="logo-title">
+      <h1>
+       DESA PASIRLANGU
+      </h1>
+      <p>
+       CISARUA - LEMBANG
+      </p>
+     </div>
+    </a>
+    <nav class="navbar" id="navbar">
+     <ul class="nav nav-pills" id="mainNav">
+      <li class="dropdown">
+       <a class="dropdown-toggle" href="#">
+        Profil Desa
+       </a>
+       <ul class="dropdown-menu">
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/about-us">
+          Tentang Kami
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/visi-misi">
+          Visi &amp; Misi
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/sejarah-desa">
+          Sejarah Desa
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/geografis">
+          Geografis Desa
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/demografi">
+          Demografi Desa
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown">
+       <ul class="dropdown-menu">
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/apbdesa">
+          APBDesa
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/#">
+          Perencanaan Pembangunan
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/#">
+          Pembangunan Desa
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown">
+       <a class="dropdown-toggle" href="#">
+        Pemerintahan
+       </a>
+       <ul class="dropdown-menu">
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/organisasi">
+          Struktur Organisasi
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/pegawai">
+          Perangkat Desa
+         </a>
+        </li>
+        <li>
+         <a href="https://kertamulya-padalarang.desa.id/lembaga">
+          Lembaga Desa
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown">
+       <a class="" href="#">
+        Galeri
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <!-- .navbar -->
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list">
+    </i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x">
+    </i>
+   </div>
+  </header>
+  <!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section class="hero" id="hero">
+   <div class="container position-relative">
+    <div class="row gy-5 mb-4" data-aos="fade-in">
+     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+      <h2>
+       WEBSITE DESA KERTAMULYA
+      </h2>
+      <!-- <h2></h2> -->
+      <p>
+       Desa Kertamulya - Kecamatan Padalarang - Kabupaten Bandung Barat
+      </p>
+      <p>
+       <strong>
+        M O T E K A R
+       </strong>
+       <br/>
+       <strong>
+       </strong>
+      </p>
+     </div>
+     <div class="col-lg-6 order-1 order-lg-2">
+      <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="myCarousel">
+       <div class="carousel-indicators">
+        <button aria-current="true" aria-label="Slide 0" class="active" data-bs-slide-to="0" data-bs-target="#myCarousel" type="button">
+        </button>
+        <button aria-current="true" aria-label="Slide 1" class="" data-bs-slide-to="1" data-bs-target="#myCarousel" type="button">
+        </button>
+        <button aria-current="true" aria-label="Slide 2" class="" data-bs-slide-to="2" data-bs-target="#myCarousel" type="button">
+        </button>
+        <button aria-current="true" aria-label="Slide 3" class="" data-bs-slide-to="3" data-bs-target="#myCarousel" type="button">
+        </button>
+       </div>
+       <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/slideshow/default-slides.png');">
+         <div class="carousel-caption d-none d-md-block">
+          <h5>
+           Website Desa
+          </h5>
+          <p>
+           Website desa adalah sebuah website yang dibuat untuk menampilkan informasi tentang suatu desa secara online.
+          </p>
+         </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/slideshow/Tampak-Jauh-Stone-Garden-768x576.jpg');">
+         <div class="carousel-caption d-none d-md-block">
+          <h5>
+           Stone Garden
+          </h5>
+          <p>
+          </p>
+         </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/COLLECTIE_TROPENMUSEUM_Medewerke.jpg');">
+         <div class="carousel-caption d-none d-md-block">
+          <h5>
+           Indonesia
+          </h5>
+          <p>
+           Seribu Pulau
+          </p>
+         </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/desa.jpg');">
+         <div class="carousel-caption d-none d-md-block">
+          <h5>
+           Desa Adat
+          </h5>
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- shortcut interop -->
+   <div class="icon-boxes position-relative">
+    <div class="container position-relative">
+     <div class="row gy-4 mt-3">
+      <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+       <div class="icon-box disabled">
+        <div class="icon">
+         <i class="bi bi-receipt">
+         </i>
+        </div>
+        <h4 class="title">
+         <a class="stretched-link">
+          Layanan Masyarakat
+         </a>
+        </h4>
+       </div>
+      </div>
+      <!--End Icon Box -->
+      <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bi bi-box">
+         </i>
+        </div>
+        <h4 class="title">
+         <a class="stretched-link" href="https://kertamulya-padalarang.desa.id/interop/prodeskel">
+          Potensi Desa
+         </a>
+        </h4>
+       </div>
+      </div>
+      <!--End Icon Box -->
+      <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bi bi-images">
+         </i>
+        </div>
+        <h4 class="title">
+         <a class="stretched-link" href="https://kertamulya-padalarang.desa.id/interop/kemendesa">
+          Pembangunan Desa
+         </a>
+        </h4>
+       </div>
+      </div>
+      <!--End Icon Box -->
+      <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+       <div class="icon-box">
+        <div class="icon">
+         <i class="bi bi-bank">
+         </i>
+        </div>
+        <h4 class="title">
+         <a class="stretched-link" href="https://kertamulya-padalarang.desa.id/interop/siskeudes">
+          Keuangan Desa
+         </a>
+        </h4>
+       </div>
+      </div>
+      <!--End Icon Box -->
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Hero Section -->
+  <main id="main">
+   <!-- ======= Info berita Section ======= -->
+   <section class="recent-posts" id="recent-posts">
+    <div class="container" data-aos="fade-up">
+     <div class="section-header">
+      <a href="https://kertamulya-padalarang.desa.id/berita">
+       <h2>
+        Informasi Berita
+       </h2>
+      </a>
+     </div>
+     <div class="content">
+      <div class="row gy-4">
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Melakukan Diagnosa Koneksi Jaringan Internet Di Komputer Anda Ke Aplikasi Web Melalui Syntaks PING dan TRACEROUTE" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/ping_traceroute_layanan_desa.png"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Mar 17, 2024
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/melakukan-diagnosa-koneksi-jaringan-internet-di-komputer-anda-ke-aplikasi-web-melalui-syntaks-ping-dan-traceroute-3217082001">
+           Melakukan Diagnosa Koneksi Jaringan Internet Di Komputer Anda Ke Aplikasi Web Melalui Syntaks PING dan TRACEROUTE
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Interopabilitas SIDEKA-NG" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/24391a1104f17cf51db1567b5cfe0e2f.jpg"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Feb 10, 2024
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/interopabilitas-sideka-ng-3217082001">
+           Interopabilitas SIDEKA-NG
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Prosedur Pemanfaatan SIdeka NG" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/Sideka_NG_Beranda_7_.png"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Feb 05, 2024
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/prosedur-pemanfaatan-sideka-ng-3217082001">
+           Prosedur Pemanfaatan SIdeka NG
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Bikin Macet, Warga Kertamulya Tolak Pembangunan TPS di Bahu Jalan" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/berita/PSX_20200804_151103.jpg"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Oct 01, 2020
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/bikin-macet-warga-kertamulya-tolak-pembangunan-tps-di-bahu-jalan-3217082001">
+           Bikin Macet, Warga Kertamulya Tolak Pembangunan TPS di Bahu Jalan
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Inisiasi Pembentukan Forum Data sebagai penunjang Sistem Informasi Desa (SID)" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/indicatornews_3_800x533_L_141260.jpg"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Jun 20, 2020
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/inisiasi-pembentukan-forum-data-sebagai-penunjang-sistem-informasi-desa-sid-3217082001">
+           Inisiasi Pembentukan Forum Data sebagai penunjang Sistem Informasi Desa (SID)
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+       <div class="col-xl-4 col-md-6">
+        <article>
+         <div class="post-img">
+          <img alt="Kuak Potensi Desa Demi Pembangunan di Indonesia" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/desa2.jpg"/>
+         </div>
+         <p class="post-date py-2">
+          <time>
+           Jun 20, 2020
+          </time>
+         </p>
+         <h2 class="title">
+          <a href="https://kertamulya-padalarang.desa.id/berita/read/kuak-potensi-desa-demi-pembangunan-di-indonesia-3217082001">
+           Kuak Potensi Desa Demi Pembangunan di Indonesia
+          </a>
+         </h2>
+        </article>
+       </div>
+       <!-- End post list item -->
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- ======= Info Desa Section ======= -->
+   <section class="faq sections-bg" id="faq">
+    <div class="container" data-aos="fade-up">
+     <div class="row gy-4">
+      <div class="col-lg-8">
+       <section class="pengumuman">
+        <div class="section-header-left">
+         <a href="https://kertamulya-padalarang.desa.id/infopenting">
+          <h2>
+           Pengumuman
+          </h2>
+         </a>
+        </div>
+        <div class="content">
+         <div class="accordion accordion-flush" data-aos="fade-up" data-aos-delay="100" id="pengumumanlist">
+          <div class="accordion-item">
+           <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-target="#pengumuman-content-0" data-bs-toggle="collapse" type="button">
+             Vaksin Booster Ke-2
+            </button>
+           </h3>
+           <div class="accordion-collapse collapse show" data-bs-parent="#pengumumanlist" id="pengumuman-content-0">
+            <div class="accordion-body">
+             <p class="post-date fw-bold">
+              <time>
+               Aug 30, 2022
+              </time>
+              |
+              <i class="bi bi-person">
+              </i>
+              User Test Desa (website.desa.id)
+             </p>
+             <p class="text-break">
+              Diinformasikan, akan ada pemberian vaksin Covid Booster ke-2 di Pendopo.
+             </p>
+             <a href="https://kertamulya-padalarang.desa.id/infopenting/read/vaksin-booster-ke-2-3217082001">
+              Selengkapnya
+             </a>
+            </div>
+           </div>
+          </div>
+          <!-- # Pengumuman item-->
+          <div class="accordion-item">
+           <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-target="#pengumuman-content-1" data-bs-toggle="collapse" type="button">
+             Pendaftaran Kartu Prakerja
+            </button>
+           </h3>
+           <div class="accordion-collapse collapse" data-bs-parent="#pengumumanlist" id="pengumuman-content-1">
+            <div class="accordion-body">
+             <p class="post-date fw-bold">
+              <time>
+               Jun 20, 2020
+              </time>
+              |
+              <i class="bi bi-person">
+              </i>
+              Admin Desa
+             </p>
+             <p class="text-break">
+              Hari ini, Selasa, 21 April 2020, pemerintah mulai membuka pendaftaran program Kartu Prakerja gelombang 2. Jadwal pendaftaran ini mundur dari yang direncanakan, yang seharusnya dilaksanakan hari Senin (20/4/2020). Direktur Komun…
+             </p>
+             <a href="https://kertamulya-padalarang.desa.id/infopenting/read/pendaftaran-kartu-prakerja-3217082001">
+              Selengkapnya
+             </a>
+            </div>
+           </div>
+          </div>
+          <!-- # Pengumuman item-->
+          <div class="accordion-item">
+           <h3 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-target="#pengumuman-content-2" data-bs-toggle="collapse" type="button">
+             Seleksi Pengurus BUMDes
+            </button>
+           </h3>
+           <div class="accordion-collapse collapse" data-bs-parent="#pengumumanlist" id="pengumuman-content-2">
+            <div class="accordion-body">
+             <p class="post-date fw-bold">
+              <time>
+               Jun 18, 2020
+              </time>
+              |
+              <i class="bi bi-person">
+              </i>
+              Admin Desa
+             </p>
+             <p class="text-break">
+              Diinformasikan kepada seluruh warga Masyarakat Desa secara khusus, Berdasarkan Keputusan Kepala Desa Nomor 7 Tahun 2019 bahwa Masa Bakti Kepengurusan Badan Usaha Milik Desa (BUMDES)  berakhir pada tanggal 31 Januari 2019, maka dari itu Pemerinta…
+             </p>
+             <a href="https://kertamulya-padalarang.desa.id/infopenting/read/seleksi-pengurus-bumdes-3217082001">
+              Selengkapnya
+             </a>
+            </div>
+           </div>
+          </div>
+          <!-- # Pengumuman item-->
+         </div>
+        </div>
+       </section>
+      </div>
+      <div class="col-lg-4">
+       <section class="stats-counter" id="stats-counter">
+        <div class="section-header-left">
+         <a href="https://kertamulya-padalarang.desa.id/agenda">
+          <h2>
+           Agenda Kegiatan
+          </h2>
+         </a>
+        </div>
+        <div class="content">
+         <a class="stats-item d-flex align-items-center" href="https://kertamulya-padalarang.desa.id/agenda/read/sosialisasi-penanggulangan-covid-19-3217082001">
+          <div class="agenda-date">
+           Feb 2024
+           <span>
+            06
+           </span>
+          </div>
+          <p class="agenda-descriptions">
+           Sosialisasi Penanggulangan Covid 19
+           <span>
+            Lokasi: Aula Desa
+           </span>
+          </p>
+         </a>
+         <!-- End Stats Item -->
+         <a class="stats-item d-flex align-items-center" href="https://kertamulya-padalarang.desa.id/agenda/read/pemberian-vitamin-a-b-3217082001">
+          <div class="agenda-date">
+           Sep 2022
+           <span>
+            02
+           </span>
+          </div>
+          <p class="agenda-descriptions">
+           Pemberian Vitamin A &amp; B
+           <span>
+            Lokasi: Posyandu Cempaka
+           </span>
+          </p>
+         </a>
+         <!-- End Stats Item -->
+         <a class="stats-item d-flex align-items-center" href="https://kertamulya-padalarang.desa.id/agenda/read/musyawarah-desa-pembentukan-bumdes">
+          <div class="agenda-date">
+           Jul 2020
+           <span>
+            06
+           </span>
+          </div>
+          <p class="agenda-descriptions">
+           Musyawarah Desa Pembentukan BUMDes
+           <span>
+            Lokasi: Aula Desa
+           </span>
+          </p>
+         </a>
+         <!-- End Stats Item -->
+        </div>
+       </section>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Info Desa Section -->
+   <!-- ======= Portfolio Section ======= -->
+   <section class="portfolio" id="portfolio">
+    <div class="container" data-aos="fade-up">
+     <div class="section-header">
+      <a href="https://kertamulya-padalarang.desa.id/gallery">
+       <h2>
+        Galeri Foto &amp; Video
+       </h2>
+      </a>
+     </div>
+     <div class="content">
+      <div class="portfolio-isotope" data-aos="fade-up" data-aos-delay="100" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+       <div>
+        <ul class="portfolio-flters">
+         <li class="filter-active" data-filter="*">
+          All
+         </li>
+         <li data-filter=".filter-foto">
+          Foto
+         </li>
+         <li data-filter=".filter-video">
+          Video
+         </li>
+        </ul>
+       </div>
+       <div class="row gy-4 portfolio-container">
+        <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+         <div class="portfolio-wrap">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_4448" src="https://www.youtube.com/embed/1kISBp8YFac" title="YouTube video player" width="560">
+          </iframe>
+          <div class="glightbox-desc desc_0">
+           Percepatan Transformasi Digital Desa Melalui SIDEKA-NG
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Percepatan Transformasi Digital Desa; description: .desc_0; descPosition: right;" href="#videourl_4448">
+            <h4>
+             Percepatan Transformasi Digital Desa
+            </h4>
+            <p>
+             Percepatan Transformasi Digital Desa Melalui SIDEKA-NG
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+         <div class="portfolio-wrap">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_2363" src="https://www.youtube.com/embed/UEqLiwV2zw0" title="YouTube video player" width="560">
+          </iframe>
+          <div class="glightbox-desc desc_1">
+           Lsunching Sideka-NG
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Launching SIDEKA-NG; description: .desc_1; descPosition: right;" href="#videourl_2363">
+            <h4>
+             Launching SIDEKA-NG
+            </h4>
+            <p>
+             Lsunching Sideka-NG
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
+         <div class="portfolio-wrap">
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Pembinaan Aparatur Desa; description: .desc_2; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembinaan_aparatur.jpg">
+           <img alt="Pembinaan Aparatur Desa" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembinaan_aparatur.jpg"/>
+          </a>
+          <div class="glightbox-desc desc_2">
+           Pembinaan Aparatur Desa Peningkataan Kapasitas Tata Kelola Desa APBDes TA 2019 Nilai : 25.000.000
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Pembinaan Aparatur Desa; description: .desc_2; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembinaan_aparatur.jpg">
+            <h4>
+             Pembinaan Aparatur Desa
+            </h4>
+            <p>
+             Pembinaan Aparatur Desa Peningkataan Kapasitas Tata Kelola Desa APBDes TA…
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
+         <div class="portfolio-wrap">
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Pembinaan Mayarakat ( Lansia ); description: .desc_3; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/45lansia_bkl_kepek_1.jpg">
+           <img alt="Pembinaan Mayarakat ( Lansia )" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/45lansia_bkl_kepek_1.jpg"/>
+          </a>
+          <div class="glightbox-desc desc_3">
+           Peningkatan Kapasitas Kader PKK tentang pengasuhan Anak Pembinaan Masyarakat Tahun Anggaran 2019 Nilai : 15.000.000,-
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Pembinaan Mayarakat ( Lansia ); description: .desc_3; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/45lansia_bkl_kepek_1.jpg">
+            <h4>
+             Pembinaan Mayarakat ( Lansia )
+            </h4>
+            <p>
+             Peningkatan Kapasitas Kader PKK tentang pengasuhan Anak Pembinaan Masyarak…
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
+         <div class="portfolio-wrap">
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Peningkatan Kapasitas Karang Taruna; description: .desc_4; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pemberdayaan_masyarakat.jpg">
+           <img alt="Peningkatan Kapasitas Karang Taruna" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pemberdayaan_masyarakat.jpg"/>
+          </a>
+          <div class="glightbox-desc desc_4">
+           Program Pemberdayaan Masyarakat Diseminasi Karang Taruna Tahun Anggaran 2019 Nilai : Rp 15.000.000,-
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Peningkatan Kapasitas Karang Taruna; description: .desc_4; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pemberdayaan_masyarakat.jpg">
+            <h4>
+             Peningkatan Kapasitas Karang Taruna
+            </h4>
+            <p>
+             Program Pemberdayaan Masyarakat Diseminasi Karang Taruna Tahun Anggaran 2…
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+        <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
+         <div class="portfolio-wrap">
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Pembangunan TPT RW 04; description: .desc_5; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembangunan_tpt.jpg">
+           <img alt="Pembangunan TPT RW 04" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembangunan_tpt.jpg"/>
+          </a>
+          <div class="glightbox-desc desc_5">
+           TPT Komplek Makam SIrna Raga Beton ( 300 - 800 M) Dana Desa Tahun Anggaran 2019 Nilai Rp 130.000.000
+          </div>
+          <div class="portfolio-info">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Pembangunan TPT RW 04; description: .desc_5; descPosition: right;" href="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/gallery/pembangunan_tpt.jpg">
+            <h4>
+             Pembangunan TPT RW 04
+            </h4>
+            <p>
+             TPT Komplek Makam SIrna Raga Beton ( 300 - 800 M) Dana Desa Tahun Anggara…
+            </p>
+           </a>
+          </div>
+         </div>
+        </div>
+        <!-- End Portfolio Item -->
+       </div>
+       <!-- End Portfolio Container -->
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Portfolio Section -->
+   <!-- ======= Struktur Organisasi Section ======= -->
+   <section class="testimonials sections-bg" id="testimonials">
+    <div class="container" data-aos="fade-up">
+     <div class="section-header">
+      <a href="https://kertamulya-padalarang.desa.id/organisasi">
+       <h2>
+        Struktur Organisasi
+       </h2>
+      </a>
+     </div>
+     <div class="content">
+      <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+       <div class="swiper-wrapper" navigation="true" pagination="true" pagination-type="progressbar">
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="Kades Kertamulya" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/pegawai/unnamed.jpg"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=100">
+              <h3 class="text-nowrap">
+               Kades Kertamulya
+              </h3>
+              <h4 class="text-nowrap">
+               KEPALA DESA
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="SEKRETARIS DESA" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=3">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               SEKRETARIS DESA
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR PEMERINTAHAN" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=4">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR PEMERINTAHAN
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR PEMBANGUNAN" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=5">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR PEMBANGUNAN
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR PEMBERDAYAAN MASYARAKAT" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=6">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR PEMBERDAYAAN MASYARAKAT
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR KESEJAHTERAAN RAKYAT" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=7">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR KESEJAHTERAAN RAKYAT
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR UMUM" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=8">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR UMUM
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KAUR KEUANGAN" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=9">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KAUR KEUANGAN
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="KETUA KARANG TARUNA" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=11141">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               KETUA KARANG TARUNA
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="PRANATA KOMPUTER" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=33466">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               PRANATA KOMPUTER
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="testimonial-wrap">
+          <div class="testimonial-item">
+           <div class="d-flex align-items-center">
+            <img alt="BADAN PERMUSYAWARATAN DESA" class="testimonial-img flex-shrink-0" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-photo.png"/>
+            <div class="text-truncate">
+             <a href="https://kertamulya-padalarang.desa.id/organisasi/detail?nid=2">
+              <h3 class="text-nowrap">
+               -
+              </h3>
+              <h4 class="text-nowrap">
+               BADAN PERMUSYAWARATAN DESA
+              </h4>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="swiper-pagination">
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End Struktur Organisasi Section -->
+   <!-- ======= About Us Section ======= -->
+   <section class="about" id="about">
+    <div class="container" data-aos="fade-up">
+     <div class="section-header">
+      <h2>
+       DESA KERTAMULYA
+      </h2>
+      <a href="https://kertamulya-padalarang.desa.id/about-us">
+       Tentang Kami
+      </a>
+     </div>
+     <div class="content">
+      <div class="row gy-4">
+       <div class="col-lg-8">
+        <iframe allowfullscreen="" frameborder="0" height="360" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB4DJF-Tzzh1AWhK0wQbP9yJbfoY_VxyME&amp;q=KERTAMULYA%2CPADALARANG%2CBANDUNG+BARAT%2CJAWA+BARAT%2C" style="border:0;x-pointer-events:none;" width="100%">
+        </iframe>
+       </div>
+       <div class="col-lg-4">
+        <div class="table-responsive">
+         <table class="table x-table-striped table-sm">
+          <tbody>
+           <tr>
+            <td width="40%">
+             Kode Desa
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td>
+             3217082001
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Tahun Pembentukan
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             1966
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Dasar Hukum
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             141.1/KEP.18-PEM/1966
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Tipologi
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             PERINDUSTRIAN/JASA
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Klasifikasi
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             SWAKARYA
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Kategori
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             MULA
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Luas Wilayah
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             305.28 ha
+            </td>
+           </tr>
+           <tr>
+            <td width="40%">
+             Batas Sebelah Utara
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             Desa Utara
+            </td>
+           </tr>
+           <tr>
+            <td nowrap="" width="40%">
+             Batas Sebelah Selatan
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             Desa Selatan
+            </td>
+           </tr>
+           <tr>
+            <td nowrap="" width="40%">
+             Batas Sebelah Timur
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             Desa Timur
+            </td>
+           </tr>
+           <tr>
+            <td nowrap="" width="40%">
+             Batas Sebelah Barat
+            </td>
+            <td width="1px">
+             :
+            </td>
+            <td class="text-truncate">
+             Desa Barat
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- End About Us Section -->
+  </main>
+  <!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer class="footer" id="footer">
+   <div class="container">
+    <div class="row gy-4">
+     <div class="col-lg-7 col-md-12 footer-info">
+      <h4 class="pb-0">
+       DESA KERTAMULYA
+      </h4>
+      <p>
+       PADALARANG - BANDUNG BARAT - JAWA BARAT
+      </p>
+      <p>
+       Website desa dibangun sebagai bagian dari SISTEM INFORMASI DESA yang berfungsi sebagai portal informasi, transparansi, dan sosialisasi pemerintah terkait tata kelola pembangunan kawasan perdesaan (pembangunan, pembinaan dan pemberdayaan) yang dirasakan langsung oleh masyarakat sebagai penerima manfaat. Website desa juga memiliki fungsi sebagai portal pelayanan secara online untuk mendekatkan dan meningkatan kualitas pelayanan masyarakat baik yang bersifat administratif maupun aspiratif.
+      </p>
+      <a class="footer-profile-links" href="https://kertamulya-padalarang.desa.id/about-us">
+       Selengkapnya
+       <i class="bi bi-chevron-right">
+       </i>
+      </a>
+      <div class="social-links d-flex mt-4">
+       <a class="facebook" href="https://facebook.com/kertamulya.desa" target="_blank">
+        <i class="bi bi-facebook">
+        </i>
+       </a>
+       <a class="twitter" href="https://twitter.com" target="_blank">
+        <i class="bi bi-twitter">
+        </i>
+       </a>
+       <a class="instagram" href="https://www.instagram.com/kertamulya548/" target="_blank">
+        <i class="bi bi-instagram">
+        </i>
+       </a>
+       <a class="youtube" href="https://www.youtube.com/channel/UCg4yvrwYo_b_vLLwCSo_qZw" target="_blank">
+        <i class="bi bi-youtube">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="col-lg-2 col-6 footer-links">
+      <h4>
+       Tautan
+      </h4>
+      <ul>
+       <li>
+        <a href="https://www.bandungbaratkab.go.id" target="default">
+         Kabupaten Bandung Barat
+        </a>
+       </li>
+       <li>
+        <a href="https://www.kemendagri.go.id/" target="default">
+         KEMENDAGRI
+        </a>
+       </li>
+       <li>
+        <a href="https://www.kemendesa.go.id/" target="default">
+         KEMENDESA
+        </a>
+       </li>
+       <li>
+        <a href="https://www.kominfo.go.id/" target="default">
+         KEMENKOMINFO
+        </a>
+       </li>
+       <li>
+        <a href="https://pahlawandesa.id/produk-desa-kertamulya" target="default">
+         Produk Desa Kertamulya
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+      <h4>
+       Kontak Pemerintahan
+      </h4>
+      <p>
+       Jl. Raya Tagog No. 128 Padalarang
+       <br/>
+       Kode Pos 40553
+       <br/>
+       <br/>
+       <strong>
+        Telepon:
+       </strong>
+       022-6623181
+       <br/>
+       <strong>
+        Email:
+       </strong>
+       <a href="/cdn-cgi/l/email-protection#f383969e979680b398968187929e869f8a92de839297929f9281929d94dd97968092dd9a97">
+        <span class="__cf_email__" data-cfemail="9feffaf2fbfaecdff4faedebfef2eaf3e6feb2effefbfef3feedfef1f8b1fbfaecfeb1f6fb">
+         [email protected]
+        </span>
+       </a>
+       <br/>
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="container mt-4">
+    <div class="copyright">
+     Kementerian Komunikasi dan Informatika RI
+    </div>
+    <div class="credits">
+     WebsiteDesa 2.0
+    </div>
+   </div>
+  </footer>
+  <!-- End Footer -->
+  <a class="scroll-top d-flex align-items-center justify-content-center" href="#">
+   <i class="bi bi-arrow-up-short">
+   </i>
+  </a>
+  <div id="preloader">
+  </div>
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/aos/aos.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/glightbox/js/glightbox.min.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/purecounter/purecounter_vanilla.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/swiper/swiper-bundle.min.js">
+  </script>
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/isotope-layout/isotope.pkgd.min.js">
+  </script>
+  <!-- Template Main JS File -->
+  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/js/main.js">
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PWLMHX8H80">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PWLMHX8H80');
+  </script>
+ </body>
 </html>
