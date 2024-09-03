@@ -5,7 +5,7 @@
   <title>
    PASIRLANGU | Website Desa Pasirlangu
   </title>
-  <!-- <base href="https://kertamulya-padalarang.desa.id/"/> -->
+  <!-- <base href=""/> -->
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
    <meta content="index, follow" name="robots">
@@ -31,23 +31,51 @@
    </meta>
   </meta>
   <style>
-    .carousel-text, h5, p{
-    color: black; /* Sesuaikan warna teks */
+    .carousel {
+    width: 100%;
+    height: 300px; /* Adjust this value as needed */
     }
 
-    .carousel-bg{
+    .carousel-inner {
+    height: 100%;
+    }
+
+    .carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    }
+
+    .carousel-indicators {
+    position: absolute;
+    top: 92%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    }
+
+    .carousel-indicators button {
+    margin: 0 5px;
+    }
+
+    .carousel-text, h5, p{
+    color: white;
+    }
+
+    .carousel-bg {
     backdrop-filter: blur(20px);
     border-radius: 20px;
-    z-index: 1000; /* Pastikan teks berada di atas carousel */
+    z-index: 10; 
     padding: 10px;
     position: absolute;
     text-align: center;
-    top: 55%; /* Sesuaikan posisi vertikal */
-    left: 50%; /* Sesuaikan posisi horizontal */
+    top: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
     }
 
     .header-text{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
       text-align: center;
       color: white;
     }
@@ -58,7 +86,7 @@
   <section class="topbar d-flex align-items-center" id="topbar">
    <div class="container d-flex justify-content-center justify-content-md-between">
     <div class="contact-info d-flex align-items-center">
-      <a>
+      <a style= 'color: white;' href="mailto:pasirlangu12@gmail.com?subject=Halo desa, saya ingin konsultasi&body=Halo, ini saya ingin konsultasi mengenai hal ini, boleh bantu tidak ya?">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#ffffff"></path> </g></svg>
         pasirlangu12@gmail.com
       </a>
@@ -75,7 +103,7 @@
   <header class="header d-flex align-items-center" id="header">
    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
     <a class="logo d-flex align-items-center" href="#">
-     <img alt="Website Desa Kertamulya" src="img/logo-desa.png"/>
+     <img alt="Website Desa Pasirlangu" src="img/logo-desa.png"/>
      <div class="logo-title">
       <h1>
        DESA PASIRLANGU
@@ -88,84 +116,28 @@
     <nav class="navbar" id="navbar">
      <ul class="nav nav-pills" id="mainNav">
       <li class="dropdown">
-       <a class="dropdown-toggle" href="#">
-        Profil Desa
-       </a>
-       <ul class="dropdown-menu">
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/about-us">
-          Tentang Kami
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/visi-misi">
-          Visi &amp; Misi
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/sejarah-desa">
-          Sejarah Desa
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/geografis">
-          Geografis Desa
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/demografi">
-          Demografi Desa
-         </a>
-        </li>
-       </ul>
+        <a class="" href="#portfolio">
+         Galeri
+        </a>
       </li>
       <li class="dropdown">
-       <ul class="dropdown-menu">
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/apbdesa">
-          APBDesa
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/#">
-          Perencanaan Pembangunan
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/#">
-          Pembangunan Desa
-         </a>
-        </li>
-       </ul>
-      </li>
-      <li class="dropdown">
-       <a class="dropdown-toggle" href="#">
+       <a class="dropdown-toggle" href="#testimonials">
         Pemerintahan
        </a>
        <ul class="dropdown-menu">
         <li>
-         <a href="https://kertamulya-padalarang.desa.id/organisasi">
+         <a href="">
           Struktur Organisasi
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/pegawai">
-          Perangkat Desa
-         </a>
-        </li>
-        <li>
-         <a href="https://kertamulya-padalarang.desa.id/lembaga">
-          Lembaga Desa
          </a>
         </li>
        </ul>
       </li>
       <li class="dropdown">
-       <a class="" href="#">
-        Galeri
-       </a>
+        <a class="" href="#about">
+         Profil Desa
+        </a>
       </li>
-     </ul>
+    </ul>
     </nav>
     <!-- .navbar -->
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list">
@@ -181,173 +153,50 @@
     <h1 class="header-text">Selamat Datang di website <br>Desa Pasirlangu</h1>
     <div class="row gy-5 mb-4" data-aos="fade-in" style="align-content: center;">
       <div class="col order-1 order-lg-2">
-      <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="myCarousel">
-       <div class="carousel-indicators">
-        <button aria-current="true" aria-label="Slide 0" class="active" data-bs-slide-to="0" data-bs-target="#myCarousel" type="button">
-        </button>
-        <button aria-current="true" aria-label="Slide 1" class="" data-bs-slide-to="1" data-bs-target="#myCarousel" type="button">
-        </button>
-        <button aria-current="true" aria-label="Slide 2" class="" data-bs-slide-to="2" data-bs-target="#myCarousel" type="button">
-        </button>
-        <button aria-current="true" aria-label="Slide 3" class="" data-bs-slide-to="3" data-bs-target="#myCarousel" type="button">
-        </button>
-       </div>
-       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/slideshow/default-slides.png');">
+        <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="myCarousel" style="width: 1920px;">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 0" class="active" data-bs-slide-to="0" data-bs-target="#myCarousel" type="button"></button>
+            <button aria-current="true" aria-label="Slide 1" class="" data-bs-slide-to="1" data-bs-target="#myCarousel" type="button"></button>
+            <button aria-current="true" aria-label="Slide 2" class="" data-bs-slide-to="2" data-bs-target="#myCarousel" type="button"></button>
+            <button aria-current="true" aria-label="Slide 3" class="" data-bs-slide-to="3" data-bs-target="#myCarousel" type="button"></button>
+          </div>
+
+          <!-- Carousel Inner -->
+          <div class="carousel-inner" role="listbox">
+            <!-- Carousel Item -->
+            <div class="carousel-item active">
+              <img src="img\Pelayanan Administrasi Desa Pasirlangu.jpeg" alt="Pelayanan Administrasi Desa Pasirlangu" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Perpustakaan Desa Pasirlangu.jpeg" alt="Perpustakaan Desa Pasirlangu" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Gedung Serbaguna.jpeg" alt="Gedung Serbaguna" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Gazebo Literasi Desa Pasirlangu.jpeg" alt="Gazebo Literasi Desa Pasirlangu" style="width: 100%; height: auto;">
+            </div>
+          </div>
         </div>
-        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/slideshow/Tampak-Jauh-Stone-Garden-768x576.jpg');">
-        </div>
-        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/COLLECTIE_TROPENMUSEUM_Medewerke.jpg');">
-        </div>
-        <div class="carousel-item" style="background-image: url('https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/desa.jpg');">
+
+        <!-- Carousel Background Text -->
+        <div class="carousel-bg">
+          <div class="carousel-text">
+            <h5>
+              Website Desa
+            </h5>
+            <p style="color: white;">
+              Website desa adalah sebuah website yang dibuat untuk menampilkan informasi tentang suatu desa secara online.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="carousel-bg">
-      <div class="carousel-text">
-        <h5>
-         Website Desa
-        
-        <p style="color: black;">
-          Website desa adalah sebuah website yang dibuat untuk menampilkan informasi tentang suatu desa secara online.
-        </p>
-      </h5>
-      </div>
-     </div>
   </div>
-</div>
-</div>
 </section>
   <!-- End Hero Section -->
-  <main id="main">
-   <!-- ======= Info berita Section ======= -->
-   <section class="recent-posts" id="recent-posts">
-    <div class="container" data-aos="fade-up">
-     <div class="section-header">
-      <a href="#news">
-       <h2>
-        Informasi Berita
-       </h2>
-      </a>
-     </div>
-     <div class="content">
-      <div class="row gy-4">
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Melakukan Diagnosa Koneksi Jaringan Internet Di Komputer Anda Ke Aplikasi Web Melalui Syntaks PING dan TRACEROUTE" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/ping_traceroute_layanan_desa.png"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Mar 17, 2024
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/melakukan-diagnosa-koneksi-jaringan-internet-di-komputer-anda-ke-aplikasi-web-melalui-syntaks-ping-dan-traceroute-3217082001">
-           Melakukan Diagnosa Koneksi Jaringan Internet Di Komputer Anda Ke Aplikasi Web Melalui Syntaks PING dan TRACEROUTE
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Interopabilitas SIDEKA-NG" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/24391a1104f17cf51db1567b5cfe0e2f.jpg"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Feb 10, 2024
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/interopabilitas-sideka-ng-3217082001">
-           Interopabilitas SIDEKA-NG
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Prosedur Pemanfaatan SIdeka NG" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/Sideka_NG_Beranda_7_.png"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Feb 05, 2024
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/prosedur-pemanfaatan-sideka-ng-3217082001">
-           Prosedur Pemanfaatan SIdeka NG
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Bikin Macet, Warga Kertamulya Tolak Pembangunan TPS di Bahu Jalan" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/berita/PSX_20200804_151103.jpg"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Oct 01, 2020
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/bikin-macet-warga-kertamulya-tolak-pembangunan-tps-di-bahu-jalan-3217082001">
-           Bikin Macet, Warga Kertamulya Tolak Pembangunan TPS di Bahu Jalan
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Inisiasi Pembentukan Forum Data sebagai penunjang Sistem Informasi Desa (SID)" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/indicatornews_3_800x533_L_141260.jpg"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Jun 20, 2020
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/inisiasi-pembentukan-forum-data-sebagai-penunjang-sistem-informasi-desa-sid-3217082001">
-           Inisiasi Pembentukan Forum Data sebagai penunjang Sistem Informasi Desa (SID)
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-       <div class="col-xl-4 col-md-6">
-        <article>
-         <div class="post-img">
-          <img alt="Kuak Potensi Desa Demi Pembangunan di Indonesia" class="img-fluid" loading="lazy" onerror="this.src='https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/images/no-image.png';this.onerror='';" src="https://kertamulya-padalarang.desa.id/assets/files/data/website-desa-kertamulya-3217082001/desa2.jpg"/>
-         </div>
-         <p class="post-date py-2">
-          <time>
-           Jun 20, 2020
-          </time>
-         </p>
-         <h2 class="title">
-          <a href="https://kertamulya-padalarang.desa.id/berita/read/kuak-potensi-desa-demi-pembangunan-di-indonesia-3217082001">
-           Kuak Potensi Desa Demi Pembangunan di Indonesia
-          </a>
-         </h2>
-        </article>
-       </div>
-       <!-- End post list item -->
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- ======= Info Desa Section ======= -->
-
-   <!-- End Info Desa Section -->
-   <!-- ======= Portfolio Section ======= -->
+  <!-- ======= Portfolio Section ======= -->
    <section class="portfolio" id="portfolio">
     <div class="container" data-aos="fade-up">
      <div class="section-header">
@@ -375,7 +224,7 @@
        <div class="row gy-4 portfolio-container">
         <div class="col-xl-4 col-md-6 portfolio-item filter-video">
          <div class="portfolio-wrap">
-          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_4448" src="/img/placeholder_vid.mp4" title="Web video player" width="560">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_4448" src="img\placeholder_vid.mp4" title="Web video player" width="560">
           </iframe>
           <div class="glightbox-desc desc_0">
            Placeholder Video
@@ -395,7 +244,7 @@
         <!-- End Portfolio Item -->
         <div class="col-xl-4 col-md-6 portfolio-item filter-video">
          <div class="portfolio-wrap">
-          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_2363" src="/img/placeholder_vid.mp4" title="Web video player" width="560">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" id="videourl_2363" src="img\placeholder_vid.mp4" title="Web video player" width="560">
           </iframe>
           <div class="glightbox-desc desc_1">
            Placeholder Video
@@ -415,14 +264,14 @@
         <!-- End Portfolio Item -->
         <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
          <div class="portfolio-wrap">
-          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Pembinaan Aparatur Desa; description: .desc_2; descPosition: right;" href="/img/placeholder_img.jpg">
-           <img alt="Pembinaan Aparatur Desa" class="img-fluid" loading="lazy" onerror="this.src='/img/placeholder_img.jpg';this.onerror='';" src="/img/placeholder_img.jpg"/>
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Pembinaan Aparatur Desa; description: .desc_2; descPosition: right;" href="img\placeholder_img.jpg">
+           <img alt="Pembinaan Aparatur Desa" class="img-fluid" loading="lazy" onerror="this.src='img\placeholder_img.jpg';this.onerror='';" src="img\placeholder_img.jpg"/>
           </a>
           <div class="glightbox-desc desc_2">
            Placeholder Photo
           </div>
           <div class="portfolio-info">
-           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_2; descPosition: right;" href="/img/placeholder_img.jpg">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_2; descPosition: right;" href="img\placeholder_img.jpg">
             <h4>
              Placeholder Photo
             </h4>
@@ -436,14 +285,14 @@
         <!-- End Portfolio Item -->
         <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
          <div class="portfolio-wrap">
-          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_3; descPosition: right;" href="/img/placeholder_img.jpg">
-           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='/img/placeholder_img.jpg';this.onerror='';" src="/img/placeholder_img.jpg"/>
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_3; descPosition: right;" href="img\placeholder_img.jpg">
+           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='img\placeholder_img.jpg';this.onerror='';" src="img\placeholder_img.jpg"/>
           </a>
           <div class="glightbox-desc desc_3">
            Placeholder Photo
           </div>
           <div class="portfolio-info">
-           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_3; descPosition: right;" href="/img/placeholder_img.jpg">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_3; descPosition: right;" href="img\placeholder_img.jpg">
             <h4>
              Placeholder Photo
             </h4>
@@ -457,14 +306,14 @@
         <!-- End Portfolio Item -->
         <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
          <div class="portfolio-wrap">
-          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_4; descPosition: right;" href="/img/placeholder_img.jpg">
-           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='/img/placeholder_img.jpg';this.onerror='';" src="/img/placeholder_img.jpg"/>
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_4; descPosition: right;" href="img\placeholder_img.jpg">
+           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='img\placeholder_img.jpg';this.onerror='';" src="img\placeholder_img.jpg"/>
           </a>
           <div class="glightbox-desc desc_4">
            Placeholder Photo
           </div>
           <div class="portfolio-info">
-           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_4; descPosition: right;" href="/img/placeholder_img.jpg">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_4; descPosition: right;" href="img\placeholder_img.jpg">
             <h4>
              Placeholder Photo
             </h4>
@@ -478,14 +327,14 @@
         <!-- End Portfolio Item -->
         <div class="col-xl-4 col-md-6 portfolio-item filter-foto">
          <div class="portfolio-wrap">
-          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_5; descPosition: right;" href="/img/placeholder_img.jpg">
-           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='/img/placeholder_img.jpg';this.onerror='';" src="/img/placeholder_img.jpg"/>
+          <a class="glightbox" data-gallery="portfolio-gallery-app" data-glightbox="title: Placeholder Photo; description: .desc_5; descPosition: right;" href="img\placeholder_img.jpg">
+           <img alt="Placeholder Photo" class="img-fluid" loading="lazy" onerror="this.src='img\placeholder_img.jpg';this.onerror='';" src="img\placeholder_img.jpg"/>
           </a>
           <div class="glightbox-desc desc_5">
            Placeholder Photo
           </div>
           <div class="portfolio-info">
-           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_5; descPosition: right;" href="/img/placeholder_img.jpg">
+           <a class="glightbox" data-gallery="portfolio-gallery-app-img" data-glightbox="title: Placeholder Photo; description: .desc_5; descPosition: right;" href="img\placeholder_img.jpg">
             <h4>
              Placeholder Photo
             </h4>
@@ -684,8 +533,8 @@
        Website desa Pasirlangu, dibangun untuk memudahkan warga mengakses informasi mengenai desa.
       </p>
       <div class="social-links d-flex mt-4">
-       <a class="instagram" href="https://www.instagram.com/kertamulya548/" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"></path> </g></svg>
+       <a class="instagram" href="https://www.instagram.com/pasirlangu_pemdes/" target="_blank">
+        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FFFFFF"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#FFFFFF"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#FFFFFF"></path> </g></svg>
        </a>
       </div>
      </div>
@@ -699,17 +548,17 @@
        Kode Pos 40553
        <br/>
        <br/>
-       <a href="https://wa.me/6285641634885?text=halo">
        <strong>
         Telepon:
        </strong>
+       <a href="https://wa.me/6285641634885?text=halo">
        +62 856-4163-4885
        </a>
        <br/>
-       <strong>
+       <strong style="color: white;">
         Email:
        </strong>
-       <a href="mailto:pasirlangu12@gmail.com?subject=Halo desa, saya ingin konsultasi&body=Halo, ini saya ingin konsultasi mengenai hal ini, boleh bantu tidak ya?">tell a friend>
+       <a href="mailto:pasirlangu12@gmail.com?subject=Halo desa, saya ingin konsultasi&body=Halo, ini saya ingin konsultasi mengenai hal ini, boleh bantu tidak ya?">
         <span class="__cf_email__" data-cfemail="9feffaf2fbfaecdff4faedebfef2eaf3e6feb2effefbfef3feedfef1f8b1fbfaecfeb1f6fb">
           pasirlangu12@gmail.com
         </span>
@@ -721,35 +570,35 @@
    </div>
   </footer>
   <!-- End Footer -->
-  <!-- <a class="scroll-top d-flex align-items-center justify-content-center" href="#">
+  <a class="scroll-top d-flex align-items-center justify-content-center" href="#">
    <i class="bi bi-arrow-up-short">
    </i>
   </a>
   <div id="preloader">
-  </div> -->
+  </div>
   <!-- Vendor JS Files -->
-  <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/bootstrap/js/bootstrap.bundle.min.js">
+  <script src="themes\new-impact-green\assets\vendor\bootstrap\js\bootstrap.bundle.min.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/aos/aos.js">
+  <script src="themes\new-impact-green\assets\vendor\aos\aos.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/glightbox/js/glightbox.min.js">
+  <script src="themes\new-impact-green\assets\vendor\glightbox\js\glightbox.min.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/purecounter/purecounter_vanilla.js">
+  <script src="themes\new-impact-green\assets\vendor\purecounter\purecounter_vanilla.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/swiper/swiper-bundle.min.js">
+  <script src="themes\new-impact-green\assets\vendor\swiper\swiper-bundle.min.js">
   </script>
-  <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/vendor/isotope-layout/isotope.pkgd.min.js">
+  <script src="themes\new-impact-green\assets\vendor\isotope-layout\isotope.pkgd.min.js">
   </script>
-  <!- Template Main JS File -->
-  <!-- <script src="https://kertamulya-padalarang.desa.id/themes/new-impact-green/assets/js/main.js">
-  </script> -->
+  <!-- Template Main JS File -->
+  <script src="themes\new-impact-green\assets\js\main.js">
+  </script>
   <!-- Google tag (gtag.js) -->
-  <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PWLMHX8H80">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PWLMHX8H80">
   </script>
   <script>
-   window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PWLMHX8H80'); -->
-  <!-- </script> -->
+   window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PWLMHX8H80');
+  </script>
  </body>
 </html>
