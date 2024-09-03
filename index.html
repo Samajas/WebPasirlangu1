@@ -71,13 +71,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    .header-text{
+  }
+  
+  .header-text{
+      position: absolute;
+      z-index: 10;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
       text-align: center;
       color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
   </style>
  </head>
@@ -150,7 +156,6 @@
 <!-- ======= Hero Section ======= -->
 <section class="hero" id="hero" style="padding: 0;">
   <div class="position-relative">
-    <h1 class="header-text">Selamat Datang di website <br>Desa Pasirlangu</h1>
     <div class="row gy-5 mb-4" data-aos="fade-in" style="align-content: center;">
       <div class="col order-1 order-lg-2">
         <div class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel" id="myCarousel" style="width: 1920px;">
@@ -181,6 +186,7 @@
         </div>
 
         <!-- Carousel Background Text -->
+        <h1 class="header-text">Selamat Datang di website <br>Desa Pasirlangu</h1>
         <div class="carousel-bg">
           <div class="carousel-text">
             <h5>
