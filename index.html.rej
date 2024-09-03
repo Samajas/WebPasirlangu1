@@ -1,0 +1,11 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -43,7 +43,8 @@
+     position: absolute;
+     text-align: center;
+     top: 55%; /* Sesuaikan posisi vertikal */
+-    left: 20%; /* Sesuaikan posisi horizontal */
++    left: 50%; /* Sesuaikan posisi horizontal */
++    transform: translate(-50%, -50%);
+     }
+ 
+     .header-text{
