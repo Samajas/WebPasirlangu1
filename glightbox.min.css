@@ -423,9 +423,9 @@ iframe.wait-autoplay {
 .glightbox-closing .gprev {
   opacity: 0 !important;
 }
-.glightbox-clean .gslide-description {
+/* .glightbox-clean .gslide-description {
   background: #fff;
-}
+} */
 .glightbox-clean .gdesc-inner {
   padding: 22px 20px;
 }
